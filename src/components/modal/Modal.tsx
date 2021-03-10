@@ -4,16 +4,17 @@ import './modal.scss';
 
 type Props = {
     children?: React.ReactNode;
+    className?: string;
     isShown: boolean;
     setIsShown: (boolean) => void;
     title?: string;
 };
 
 export default function Modal(props: Props) {
-    const { children, isShown, setIsShown, title } = props;
+    const { children, className, isShown, setIsShown, title } = props;
 
     const modal = (
-        <div className="modal-backdrop">
+        <div className={`modal-backdrop ${className}`}>
             <div className="modal">
                 <div className="modal-header">
                     {title && <h1 className="modal-title"> {title} </h1>}

@@ -1,7 +1,8 @@
+// rgb(119, 221, 246, 0.85)
 // colors
 $white: #fff;
 $black: #000;
-$background-blue: rgb(119, 221, 246, 0.5);
+$background-blue: rgb(128, 191, 255, 0.85);
 $background-blue-brighter: rgb(15, 195, 240, 0.75);
 
 // numbers
@@ -15,14 +16,14 @@ $margin-default: 3vh;
     // alignment properties
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     .modal {
         background: $background-blue;
         border: $border-size double $white;
         border-radius: $border-radius;
         color: $white;
-        height: 90%;
-        margin: 0;
+        height: fit-content;
+        margin: 2vh;
         overflow: auto;
         position: absolute;
         visibility: visible;
