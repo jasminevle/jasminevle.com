@@ -7,7 +7,7 @@ type Props = {
     title?: string;
 };
 
-function Section(props: Props) {
+export default function Section(props: Props) {
     const { children, title } = props;
 
     return (
@@ -17,5 +17,3 @@ function Section(props: Props) {
         </div>
     );
 }
-
-export default Section;

@@ -9,7 +9,7 @@ type Props = {
     title?: string;
 };
 
-function Modal(props: Props) {
+export default function Modal(props: Props) {
     const { children, isShown, setIsShown, title } = props;
 
     const modal = (
@@ -30,5 +30,3 @@ function Modal(props: Props) {
 
     return isShown ? modal : null;
 }
-
-export default Modal;
