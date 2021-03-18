@@ -11,7 +11,7 @@ export default function Profile(props: Props) {
     const { isShown, setIsShown } = props;
 
     return (
-        <Modal isShown={isShown} setIsShown={setIsShown} title="character profile (in progress)">
+        <Modal isShown={isShown} setIsShown={setIsShown} title="character profile (wip)">
             <Section>
                 <h2>name: jasmine le </h2>
                 <h2>pronouns: she / her </h2>
@@ -20,12 +20,14 @@ export default function Profile(props: Props) {
             <Section title="personal attribute: egg" />
             {/* <Section title="personal skills" />
             <Section title="overall stats" /> */}
-            <Section title="general evaluation:">
-                <p>
-                    an egg whose favorite things to do include collecting plants, buying craft supplies, and scrolling
-                    through instagram. the best way to befriend this person is by sending memes, music recommendations,
-                    and fun recipes.
-                </p>
+            <Section title="general bio:">
+                <p>wah</p>
+            </Section>
+            <Section title="likes:">
+                <p>eggs, plants, memes, naps, listening to music, and collecting craft supplies</p>
+            </Section>
+            <Section title="dislikes:">
+                <p>leaving the shopping cart wherever, bugs and spiders, overcooked yolk</p>
             </Section>
         </Modal>
     );
