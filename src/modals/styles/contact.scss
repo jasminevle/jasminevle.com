@@ -1,0 +1,14 @@
+.contact-links-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    h2 {
+        margin-bottom: 3vh;
+    }
+
+    img {
+        height: 9vh;
+        margin: 1vh;
+    }
+}
