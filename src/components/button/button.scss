@@ -1,14 +1,4 @@
-// rgb(119, 221, 246, 0.85)
-// colors
-$white: #fff;
-$black: #000;
-$background-blue: rgb(128, 191, 255, 0.85);
-$background-blue-brighter: rgb(15, 195, 240, 0.75);
-
-// numbers
-$border-size: 10px;
-$border-radius: 30px;
-$margin-default: 3vh;
+@import '../../styles/constants.scss';
 
 .button {
     background: transparent;

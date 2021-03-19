@@ -1,5 +1,4 @@
-$background-purple: #ccccff;
-$foreground-purple: #b3b3ff;
+@import '../styles/constants.scss';
 
 html,
 body {
@@ -22,9 +21,6 @@ body {
     justify-content: center;
 }
 
-.information-panel {
-}
-
 .centered-toggle-buttons {
     background: $foreground-purple;
     padding: 1em;
@@ -34,4 +30,7 @@ body {
     align-content: center;
     margin: 1em;
     text-align: center;
+    .show-modal-button {
+        margin-bottom: 0px;
+    }
 }
