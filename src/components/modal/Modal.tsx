@@ -8,7 +8,7 @@ type Props = {
     children?: React.ReactNode;
     className?: string;
     isShown: boolean;
-    setIsShown: (boolean) => void;
+    setIsShown: (show: boolean) => void;
     title?: string;
 };
 

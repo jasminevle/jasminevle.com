@@ -22,7 +22,7 @@ export default function Home() {
             <div className="centered-toggle-buttons">
                 <h1>hi</h1>
                 <p>building building building</p>
-                <Button onClick={e => setModalVisibility(true)}>character profile</Button>
+                <Button onClick={e => setModalVisibility(!isShownOne)}>character profile</Button>
             </div>
         </>
     );
