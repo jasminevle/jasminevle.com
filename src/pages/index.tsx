@@ -1,8 +1,10 @@
 import React from 'react';
 
 import Profile from '../modals/profile';
+import SEO from '../components/seo';
 
 import './index.scss';
+import { Button } from '../components';
 
 export default function Home() {
     const [isShownOne, setIsShownOne] = React.useState(false);
@@ -13,12 +15,15 @@ export default function Home() {
 
     return (
         <>
+            <SEO title="Jasmine Le" />
+            <div className="information-panel">
+                <Profile isShown={isShownOne} setIsShown={setIsShownOne} />
+            </div>
             <div className="centered-toggle-buttons">
                 <h1>hi</h1>
                 <p>building building building</p>
-                <button onClick={e => setModalVisibility(true)}>clicky click one</button>
+                <Button onClick={e => setModalVisibility(true)}>character profile</Button>
             </div>
-            <Profile isShown={isShownOne} setIsShown={setIsShownOne} />
         </>
     );
 }
