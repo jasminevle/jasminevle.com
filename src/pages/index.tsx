@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SEO from '../components/seo';
 import Contact from '../modals/contact';
 import Profile from '../modals/profile';
 
@@ -17,6 +18,7 @@ export default function Home() {
 
     return (
         <>
+            <SEO title="Jasmine Le" />
             <div className="information-panel">
                 <Profile isShown={isProfileShown} setIsShown={setModalVisibility} />
                 <Contact isShown={isContactShown} setIsShown={setIsContactShown} />
