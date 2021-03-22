@@ -1,14 +1,17 @@
+@import '../../styles/constants.scss';
+
 .contact-links-section {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    text-align: center;
+    justify-content: center;
     h2 {
         margin-bottom: 3vh;
     }
-
-    img {
-        height: 9vh;
-        margin: 1vh;
+    a {
+        color: $white;
     }
+    // img {
+    //     height: 9vh;
+    //     margin: 1vh;
+    // }
 }

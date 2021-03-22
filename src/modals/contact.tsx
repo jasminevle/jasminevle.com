@@ -17,12 +17,25 @@ export default function Contact(props: Props) {
     return (
         <Modal isShown={isShown} setIsShown={setIsShown} title="contact me">
             <Section className="contact-links-section" title="would you like to contact me?">
-                <a href="https://www.linkedin.com/in/jasminevle/" target="_blank">
-                    <img src={linkedInIcon} alt="link to linkedin"></img>
-                </a>
-                <a href="https://github.com/jasminevle" target="_blank">
-                    <img src={githubIcon} alt="link to github"></img>
-                </a>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jasminevle/" target="_blank">
+                            {/* <img src={linkedInIcon} alt="link to linkedin"></img> */}
+                            <p>linkedin</p>
+                        </a>{' '}
+                    </li>
+                    <li>
+                        <a href="https://github.com/jasminevle" target="_blank">
+                            {/* <img src={githubIcon} alt="link to github"></img> */}
+                            <p>github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://app.box.com/s/bcv38tw6736a7c6scqd06exp337mbxcv" target="_blank">
+                            <p>resume</p>
+                        </a>{' '}
+                    </li>
+                </ul>
             </Section>
         </Modal>
     );

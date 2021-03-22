@@ -12,7 +12,7 @@ export default function Section(props: Props) {
     const { children, className, title } = props;
 
     return (
-        <div className={`section ${className}`}>
+        <div className={className ? `section ${className}` : `section`}>
             {title && <h2 className="section-title"> {title} </h2>}
             {children}
         </div>
