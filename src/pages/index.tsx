@@ -10,7 +10,7 @@ export default function Home() {
     const [isProfileShown, setIsProfileShown] = React.useState(false);
     const [isContactShown, setIsContactShown] = React.useState(false);
 
-    const setModalVisibility = (showProfile: boolean, showContact: boolean) => {
+    const setModalVisibility = (showProfile: boolean, showContact: boolean = false) => {
         setIsProfileShown(showProfile);
         setIsContactShown(showContact);
     };
@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <>
             <div className="information-panel">
-                <Profile isShown={isProfileShown} setIsShown={setIsProfileShown} />
+                <Profile isShown={isProfileShown} setIsShown={setModalVisibility} />
                 <Contact isShown={isContactShown} setIsShown={setIsContactShown} />
             </div>
             <div className="centered-toggle-buttons">
