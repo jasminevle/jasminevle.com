@@ -1,12 +1,12 @@
 @import '../../styles/constants.scss';
 
 .modal-backdrop {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     // alignment properties
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     .modal {
         background: $background-blue;
         border: $border-size double $white;
@@ -14,8 +14,8 @@
         color: $white;
         height: fit-content;
         margin: 2vh;
-        overflow: auto;
-        // position: absolute;
+        max-height: 75vh;
+        overflow: scroll;
         visibility: visible;
         width: 90%;
         z-index: 1;
@@ -35,7 +35,7 @@
             display: flex;
             justify-content: space-between;
             .modal-title {
-                width: fit-content;
+                width: fit-content(100%);
                 // this will center the title
                 margin-left: auto;
                 margin-right: auto;
@@ -44,7 +44,6 @@
                 align-items: center;
                 display: flex;
                 right: 0;
-                width: fit-content;
             }
         }
         .modal-content {

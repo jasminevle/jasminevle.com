@@ -21,6 +21,10 @@ body {
     justify-content: center;
 }
 
+.information-panel {
+    height: fit-content(100%);
+}
+
 .centered-toggle-buttons {
     background: $foreground-purple;
     padding: 1em;
@@ -33,4 +37,6 @@ body {
     .show-modal-button {
         margin-bottom: 0px;
     }
+    max-height: 100vh;
+    overflow: scroll;
 }
