@@ -34,11 +34,9 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
+            text-align: center;
             .modal-title {
-                width: fit-content(100%);
-                // this will center the title
-                margin-left: auto;
-                margin-right: auto;
+                padding-left: $margin-default;
             }
             .modal-actions {
                 align-items: center;
@@ -51,7 +49,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            margin: $margin-default;
+            margin: 0 $margin-default $margin-default $margin-default;
         }
     }
 }
